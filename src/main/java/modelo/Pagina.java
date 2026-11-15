@@ -4,8 +4,6 @@
  */
 package modelo;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author amand
@@ -13,11 +11,11 @@ import java.util.ArrayList;
 public abstract class Pagina {
     private String titulo;
     private int numeroPagina;
-    private ArrayList<String> contenido;
+    private String contenido;
     
     //constructor
 
-    public Pagina(String titulo, int numeroPagina, ArrayList<String> contenido) {
+    public Pagina(String titulo, int numeroPagina, String contenido) {
         this.titulo = titulo;
         this.numeroPagina = numeroPagina;
         this.contenido = contenido;
@@ -40,16 +38,16 @@ public abstract class Pagina {
         this.numeroPagina = numeroPagina;
     }
 
-    public ArrayList<String> getContenido() {
+    public String getContenido() {
         return contenido;
     }
 
-    public void setContenido(ArrayList<String> contenido) {
+    public void setContenido(String contenido) {
         this.contenido = contenido;
     }
     
     //metodo abstracto
-    public abstract ArrayList<String> mostrarContenido();
+    public abstract String mostrarContenido();
     
     
 }
