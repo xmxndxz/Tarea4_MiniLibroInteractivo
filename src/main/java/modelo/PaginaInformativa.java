@@ -4,10 +4,19 @@
  */
 package modelo;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author amand
  */
-public class PaginaInformativa {
-    
+public class PaginaInformativa extends Pagina {
+    public PaginaInformativa(String titulo , int numeroPagina, ArrayList<String> contenido){
+        super (titulo, numeroPagina, contenido);
+    }
+
+    @Override
+    public ArrayList<String> mostrarContenido() {
+      return getContenido();
+    }
 }
