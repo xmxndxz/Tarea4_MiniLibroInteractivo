@@ -10,12 +10,12 @@ import java.awt.event.ActionListener;
  *
  * @author amand
  */
-public class GUI_VistaLibro extends javax.swing.JFrame {
+public class VistaLibro extends javax.swing.JFrame {
 
     /**
      * Creates new form GUI_VistaLibro
      */
-    public GUI_VistaLibro() {
+    public VistaLibro() {
         initComponents();
     }
 
@@ -88,43 +88,43 @@ public class GUI_VistaLibro extends javax.swing.JFrame {
 
         txtContenido.setColumns(20);
         txtContenido.setRows(5);
-        pnlBack.add(txtContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 79, 608, 191));
+        pnlBack.add(txtContenido, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 79, 610, 180));
 
         btnOpcion1.setText("Opcion 1");
-        pnlBack.add(btnOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 300, 100, 35));
+        pnlBack.add(btnOpcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 100, 35));
 
         btnOpcion2.setText("Opcion 2");
-        pnlBack.add(btnOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, 100, 35));
+        pnlBack.add(btnOpcion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 100, 35));
 
         btnOpcion3.setText("Opcion 3");
         btnOpcion3.addActionListener(this::btnOpcion3ActionPerformed);
-        pnlBack.add(btnOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 300, 100, 35));
+        pnlBack.add(btnOpcion3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, 100, 35));
 
         lblTitulo.setFont(new java.awt.Font("Serif", 1, 18)); // NOI18N
         lblTitulo.setText("Titulo");
-        pnlBack.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 130, -1));
+        pnlBack.add(lblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 470, -1));
 
         lblNumeroDePagina.setFont(new java.awt.Font("Serif", 0, 12)); // NOI18N
         lblNumeroDePagina.setText("Pagina");
-        pnlBack.add(lblNumeroDePagina, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, 37, -1));
+        pnlBack.add(lblNumeroDePagina, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 230, -1));
 
         btnSalir.setText("SALIR");
-        pnlBack.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 440, 110, 50));
+        pnlBack.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 410, 110, 50));
 
         btnAnterior.setText("Anterior");
-        pnlBack.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 370, 100, 35));
+        pnlBack.add(btnAnterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 100, 35));
 
         btnActividad.setText("Ir a Actividad");
-        pnlBack.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, 100, 35));
+        pnlBack.add(btnActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 100, 35));
 
         btnResultados.setText("Resultados");
-        pnlBack.add(btnResultados, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 370, 100, 35));
+        pnlBack.add(btnResultados, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, 100, 35));
 
         btnMenu.setText("Menú Principal");
-        pnlBack.add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 110, 50));
+        pnlBack.add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 410, 110, 50));
 
         btnSiguiente.setText("Siguiente");
-        pnlBack.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 370, 100, 35));
+        pnlBack.add(btnSiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 350, 100, 35));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

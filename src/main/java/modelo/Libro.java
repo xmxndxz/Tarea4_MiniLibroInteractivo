@@ -23,22 +23,29 @@ public class Libro {
     public Libro() {
         String pagina1 = "Puntarenas es la provincia más grande de Costa Rica."
                 + "\nSe extiende por la costa del Pacífico, de norte a sur."
-                + "\nAllí hay bosques, manglares, playas, islas y mares."
-                + "\nEsa variedad de ambientes da hogar a miles de especies.";
+                + "\nCuenta con bosques, manglares, playas, islas y mares."
+                + "\nEsa variedad de ambientes es hogar de miles de especies.";
 
-        String pagina2 = "En la península de Osa está el Parque Nacional Corcovado,"
-                + "\nhogar de la lapa roja, el jaguar y el tapir."
+        String pagina2 = "En la península de Osa está el Parque Nacional Corcovado, "
+                + " hogar de la lapa roja, el jaguar y el tapir."
                 + "\nEn Manuel Antonio vive el mono tití, una especie amenazada."
                 + "\nEn Monteverde, el bosque nuboso protege al quetzal.";
 
         String pagina3 = "En el Parque Nacional Marino Ballena, en Uvita,"
-                + "\nllegan las ballenas jorobadas a tener a sus crías."
-                + "\nLa Isla del Coco, también parte de Puntarenas,"
-                + "\nes Patrimonio Mundial y refugio de tiburones martillo."
+                + "llegan las ballenas jorobadas a tener a sus crías."
+                + "\nLa Isla del Coco, que también parte de Puntarenas,"
+                + "  es Patrimonio Mundial y refugio de tiburones martillo."
                 + "\nCuidar estos lugares protege el tesoro natural del país.";
 
         String instrucciones = "Responda las tres preguntas."
                 + "\nTiene un máximo de tres intentos.";
+
+        agregarPagina(new PaginaInformativa("Puntarenas: una provincia llena de vida", 1, pagina1));
+        agregarPagina(new PaginaInformativa("Parques y bosques de tierra firme", 2, pagina2));
+        agregarPagina(new PaginaInformativa("El mar y las islas del Pacífico", 3, pagina3));
+        actividad = new PaginaActividad("Actividad: ¡pon a prueba lo aprendido!", 4, instrucciones);
+        agregarPagina(actividad);
+        posicionActividad = cantidadPaginas() - 1;
     }
 
     public String getTitulo() {
